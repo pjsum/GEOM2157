@@ -61,7 +61,7 @@ class FloodAffectedPrivateParcels(QgsProcessingAlgorithm):
 
     def shortHelpString(self):
         #set the script description (for GUI)
-        return self.tr("This tool will create two new vector layers containing flooded areas and flood-affected private parcels, as well providing statistics for area and parcel counts. \n Note: Please turn off Invalid Features Filtering before using this tool.")
+        return self.tr("This tool will provide counts for flood-affected private parcels and their relevant flood control overlays, as well as providing area (sqm) of projected flood inundation for a council, based on a given coastal inundation layer. It also outputs two new temporary layers, a “Flood-Affected Private Parcels” layer which has added zone and overlay attributes, and a “Flooded Area” layer, which has added zone and area attributes. \n Note: Please turn off Invalid Features Filtering before using this tool.")
 
     def initAlgorithm(self, config=None):
         #define the input vector feature sources (set allowable geometry type and text labels for GUI)
